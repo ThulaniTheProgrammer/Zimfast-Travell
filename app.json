@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "app",
+    "name": "ZimFastTravel",
     "slug": "app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Zimtravell.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Zimtravell.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -15,16 +15,36 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "zimtravell",
+      "NSAppTransportSecurity": {
+        "NSAllowsArbitraryLoads": true,
+        "NSAllowsArbitraryLoadsInWebContent": true
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyA0GHx2YqPIc_ta2QyumOBVYUwu7aCRpKw"
+      }
     },
+    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.thulanimakeba.app",
+      "config": {
+        "googleMaps": {
+          "apiKey" : "AIzaSyA0GHx2YqPIc_ta2QyumOBVYUwu7aCRpKw"
+        }
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "784539c7-8b18-4d2d-b4d2-72158a1766bb"
+      }
     }
   }
 }
